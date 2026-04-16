@@ -1236,7 +1236,7 @@ footer {
 }
 
 /* ========================================
-   BOOTCAMP TEASER SECTION â€” v1 (LOCKED)
+   BOOTCAMP TEASER SECTION Ã¢â‚¬â€ v1 (LOCKED)
    ======================================== */
 
 .bootcamp-teaser {
@@ -1465,7 +1465,7 @@ footer {
 }
 
 /* ========================================
-   BOOTCAMP PAGE â€” v1 (PRODUCTION)
+   BOOTCAMP PAGE Ã¢â‚¬â€ v1 (PRODUCTION)
    Extends stylesv1.1 without altering
    shared homepage or waitlist structure
    ======================================== */
@@ -2741,23 +2741,23 @@ footer {
 }
 
 #vipd-plan-monthly:checked ~ .vipd-pricing-foot .vipd-selection-text::after {
-  content: "Monthly Â· $149 / month";
+  content: "Monthly Ã‚Â· $149 / month";
 }
 
 #vipd-plan-quarterly:checked ~ .vipd-pricing-foot .vipd-selection-text::after {
-  content: "Quarterly Â· $349 / 3 months";
+  content: "Quarterly Ã‚Â· $349 / 3 months";
 }
 
 #vipd-plan-6months:checked ~ .vipd-pricing-foot .vipd-selection-text::after {
-  content: "6 Months Â· $499 / 6 months";
+  content: "6 Months Ã‚Â· $499 / 6 months";
 }
 
 #vipd-plan-annual:checked ~ .vipd-pricing-foot .vipd-selection-text::after {
-  content: "Annual Â· $899 / year";
+  content: "Annual Ã‚Â· $899 / year";
 }
 
 #vipd-plan-lifetime:checked ~ .vipd-pricing-foot .vipd-selection-text::after {
-  content: "Lifetime Â· $2,249 one-time";
+  content: "Lifetime Ã‚Â· $2,249 one-time";
 }
 
 .vipd-quote-grid {
@@ -2969,7 +2969,7 @@ footer {
 
 
 /* =========================================================
-   UNIFIED SITE REBUILD — INDEX V4 AS CANONICAL MASTER
+   UNIFIED SITE REBUILD â€” INDEX V4 AS CANONICAL MASTER
    Production filenames:
    index.html / bootcamp.html / vipdiscord.html / waitlist.html
    ========================================================= */
@@ -3269,4 +3269,120 @@ footer {
 
 @media (max-width: 760px) {
   .vipd-footer { padding: 20px 18px 44px; }
+}
+
+
+/* =========================================================
+   VIP DISCORD â€” PRECISION PASS 01
+   Scope: hero alignment + top hero open layout + premium bottom CTA
+   Canonical reference: index V4 only
+   ========================================================= */
+
+.vipd-container {
+  width: min(calc(100% - 48px), var(--max));
+}
+
+.vipd-hero {
+  position: relative;
+  padding: 96px 0 64px;
+}
+
+.vipd-hero::before {
+  content: "";
+  position: absolute;
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(122, 92, 255, 0.15), transparent 64%);
+  top: -180px;
+  right: -120px;
+  filter: blur(16px);
+  pointer-events: none;
+}
+
+.vipd-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 42px;
+  align-items: center;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.vipd-hero-shell {
+  display: none;
+}
+
+.vipd-hero h1 {
+  max-width: 8ch;
+}
+
+.vipd-hero-card {
+  position: relative;
+  border-radius: 30px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.018));
+  box-shadow:
+    0 16px 55px rgba(0,0,0,0.32),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  overflow: hidden;
+  min-height: auto;
+}
+
+.vipd-hero-card::before {
+  display: none;
+}
+
+.vipd-hero-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(122, 92, 255, 0.08), transparent 42%, transparent 100%);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.vipd-discord-window {
+  position: relative;
+  z-index: 1;
+}
+
+.vipd-cta {
+  padding: 24px 0 80px;
+}
+
+.vipd-cta .section-wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.vipd-cta .cta-actions {
+  align-items: flex-end;
+}
+
+@media (max-width: 1120px) {
+  .vipd-hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .vipd-container {
+    width: min(calc(100% - 36px), var(--max));
+  }
+
+  .vipd-hero {
+    padding-top: 56px;
+  }
+
+  .vipd-hero-grid {
+    gap: 24px;
+  }
+
+  .vipd-hero-card {
+    padding: 24px 20px;
+    border-radius: 22px;
+  }
 }
