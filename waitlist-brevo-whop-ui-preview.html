@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FortitudeFX | Access Request Preview</title>
+  <meta name="theme-color" content="#06060a">
+  <link rel="stylesheet" href="styles-final-clean.css">
+</head>
+<body class="page-waitlist">
+
+  <nav class="nav">
+    <div class="nav-wrap">
+      <div class="nav-brand">
+        <a href="waitlist-brevo-whop-ui-preview.html#top">FORTITUDEFX</a>
+      </div>
+
+      <div class="nav-center">
+        <a href="index_final_corrected_v1.html">Home</a>
+        <a href="vipdiscord-final.html">VIP</a>
+        <a href="bootcamp-final.html">Bootcamp</a>
+        <a href="waitlist-brevo-whop-ui-preview.html#form">Waitlist</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="nav-btn nav-btn-secondary" href="index_final_corrected_v1.html">Main Site</a>
+        <a class="nav-btn nav-btn-primary" href="waitlist-brevo-whop-ui-preview.html#form">Request Access</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page" id="top">
+    <div class="page-glow"></div>
+
+    <div class="page-wrap">
+      <div class="page-left" id="why">
+        <span class="kicker">ACCESS / THE FFX WAY</span>
+        <h1>Choose the right path with less friction.</h1>
+        <p class="hero-copy">
+          This derivative preview keeps the FortitudeFX waitlist experience aligned with your locked system while adding path-based selection for VIP, Bootcamp, or staying connected.
+        </p>
+
+        <div class="benefit-list left-meta">
+          <div class="benefit-item left-meta-item">
+            <strong>VIP path</strong>
+            <span>Select a membership duration, keep the experience focused, then continue to the matching Whop checkout or waitlist link.</span>
+          </div>
+
+          <div class="benefit-item left-meta-item">
+            <strong>Bootcamp path</strong>
+            <span>Present the Bootcamp offer clearly, including the first-batch discount and bundled VIP access, without forcing extra page hops.</span>
+          </div>
+
+          <div class="benefit-item left-meta-item">
+            <strong>Stay connected</strong>
+            <span>Keep lower-intent visitors captured without making them choose a paid path before they are ready.</span>
+          </div>
+        </div>
+
+        <a href="waitlist-brevo-whop-ui-preview.html#form" class="btn btn-primary left-cta">
+          Continue to request access
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="page-right">
+        <div class="form-shell" id="form">
+          <div class="form-head">
+            <div class="form-brand">
+              <small>FortitudeFX Access Flow</small>
+              <strong>Request Access</strong>
+            </div>
+            <div class="form-badge">Preview Build</div>
+          </div>
+
+          <form id="waitlistForm" novalidate>
+            <div class="field-grid">
+              <div class="field">
+                <label for="first-name">First name</label>
+                <input class="input" id="first-name" name="first_name" type="text" placeholder="Enter your first name" required>
+              </div>
+
+              <div class="field">
+                <label for="last-name">Last name</label>
+                <input class="input" id="last-name" name="last_name" type="text" placeholder="Enter your last name" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email address</label>
+              <input class="input" id="email" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="field">
+              <label>Brevo embed slot</label>
+              <div class="benefit-item left-meta-item" id="brevo-embed-slot">
+                <strong>Embed-ready placeholder</strong>
+                <span>Replace this block with your Brevo embed snippet when ready. The native preview fields above stay active for UI testing right now.</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Select your path</label>
+              <div class="choice-grid">
+                <label class="choice">
+                  <input type="radio" name="path" value="VIP" checked>
+                  <span class="select-btn">VIP</span>
+                </label>
+
+                <label class="choice">
+                  <input type="radio" name="path" value="Bootcamp">
+                  <span class="select-btn">Bootcamp</span>
+                </label>
+
+                <label class="choice">
+                  <input type="radio" name="path" value="Stay Connected">
+                  <span class="select-btn">Stay Connected</span>
+                </label>
+              </div>
+            </div>
+
+            <div id="vipOptions" hidden>
+              <div class="field">
+                <label>Select VIP membership option</label>
+                <div class="vipd-plans">
+                  <input class="vipd-plan-input" type="radio" name="vip_plan" id="vip-plan-monthly" value="Monthly">
+                  <label class="vipd-plan-card" for="vip-plan-monthly">
+                    <div class="vipd-plan-select"></div>
+                    <div class="vipd-plan-main">
+                      <div class="vipd-plan-row-top">
+                        <div class="vipd-plan-name">Monthly</div>
+                      </div>
+                      <div class="vipd-plan-price-line">
+                        <div class="vipd-plan-price">$149.00</div>
+                        <div class="vipd-plan-term">/ month</div>
+                      </div>
+                    </div>
+                    <div class="vipd-plan-meta">
+                      <strong>Flexible entry</strong>
+                    </div>
+                  </label>
+
+                  <input class="vipd-plan-input" type="radio" name="vip_plan" id="vip-plan-quarterly" value="Quarterly">
+                  <label class="vipd-plan-card" for="vip-plan-quarterly">
+                    <div class="vipd-plan-select"></div>
+                    <div class="vipd-plan-main">
+                      <div class="vipd-plan-row-top">
+                        <div class="vipd-plan-name">Quarterly</div>
+                        <div class="vipd-plan-save">22% off</div>
+                      </div>
+                      <div class="vipd-plan-price-line">
+                        <div class="vipd-plan-price">$349.00</div>
+                        <div class="vipd-plan-term">/ 3 months</div>
+                      </div>
+                    </div>
+                    <div class="vipd-plan-meta">
+                      <strong>Lower monthly rate</strong>
+                    </div>
+                  </label>
+
+                  <input class="vipd-plan-input" type="radio" name="vip_plan" id="vip-plan-6months" value="6 Months">
+                  <label class="vipd-plan-card" for="vip-plan-6months">
+                    <div class="vipd-plan-select"></div>
+                    <div class="vipd-plan-main">
+                      <div class="vipd-plan-row-top">
+                        <div class="vipd-plan-name">6 Months</div>
+                        <div class="vipd-plan-save">44% off</div>
+                      </div>
+                      <div class="vipd-plan-price-line">
+                        <div class="vipd-plan-price">$499.00</div>
+                        <div class="vipd-plan-term">/ 6 months</div>
+                      </div>
+                    </div>
+                    <div class="vipd-plan-meta">
+                      <strong>Commit deeper</strong>
+                    </div>
+                  </label>
+
+                  <input class="vipd-plan-input" type="radio" name="vip_plan" id="vip-plan-annual" value="Annual">
+                  <label class="vipd-plan-card" for="vip-plan-annual">
+                    <div class="vipd-plan-select"></div>
+                    <div class="vipd-plan-main">
+                      <div class="vipd-plan-row-top">
+                        <div class="vipd-plan-name">Annual</div>
+                        <div class="vipd-plan-save">50% off</div>
+                      </div>
+                      <div class="vipd-plan-price-line">
+                        <div class="vipd-plan-price">$899.00</div>
+                        <div class="vipd-plan-term">/ year</div>
+                      </div>
+                    </div>
+                    <div class="vipd-plan-meta">
+                      <strong>Highest annual value</strong>
+                    </div>
+                  </label>
+
+                  <input class="vipd-plan-input" type="radio" name="vip_plan" id="vip-plan-lifetime" value="Lifetime">
+                  <label class="vipd-plan-card" for="vip-plan-lifetime">
+                    <div class="vipd-plan-select"></div>
+                    <div class="vipd-plan-main">
+                      <div class="vipd-plan-row-top">
+                        <div class="vipd-plan-name">Lifetime</div>
+                      </div>
+                      <div class="vipd-plan-price-line">
+                        <div class="vipd-plan-price">$2,249.00</div>
+                        <div class="vipd-plan-term">one-time purchase</div>
+                      </div>
+                    </div>
+                    <div class="vipd-plan-meta">
+                      <strong>Permanent access</strong>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div id="bootcampOptions" hidden>
+              <article class="glass-card">
+                <div class="tiny">First Batch Launch Offer</div>
+                <h3>Catch The Wick Bootcamp</h3>
+                <div class="price-row">
+                  <strong>$980</strong>
+                  <span>$1499</span>
+                </div>
+                <ul class="pricing-list">
+                  <li>5-week structured Bootcamp</li>
+                  <li>50% discounted first-batch positioning shown clearly at the point of selection</li>
+                  <li>3 months VIP Discord included free</li>
+                  <li>Built for traders who want proper structure, not scattered fragments</li>
+                </ul>
+                <p class="pricing-note">Selecting Bootcamp will prepare the flow for the Bootcamp Whop link once you add it.</p>
+              </article>
+            </div>
+
+            <div class="field">
+              <label for="trading-stage">Trading stage</label>
+              <select class="input" id="trading-stage" name="trading_stage" required>
+                <option value="" selected disabled>Select your stage</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Optional note</label>
+              <textarea class="textarea" id="message" name="message" placeholder="Tell us what you want to improve, where you are struggling, or what you are looking for from FortitudeFX."></textarea>
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" id="consent" required>
+              <span>I agree to receive updates related to my selected path and understand I can unsubscribe at any time.</span>
+            </label>
+
+            <div class="submit-row">
+              <button type="submit" class="submit-btn" id="submitBtn">
+                Continue
+                <span aria-hidden="true">→</span>
+              </button>
+
+              <div class="sub-note" id="subNote">
+                UI preview mode. Brevo embed and Whop links can be connected after layout approval.
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="thankyou-shell" id="thankyou">
+          <span class="thankyou-kicker">WELCOME TO FORTITUDEFX</span>
+          <h2 id="thankyouHeading">You’re in. A cleaner trading path starts here.</h2>
+          <p id="thankyouCopy">
+            Thank you for joining the FortitudeFX access flow preview. Your chosen path has been captured so the next step can stay aligned and intentional.
+          </p>
+
+          <div class="vip-grid vip-grid-3 thankyou-grid">
+            <article class="vip-card thankyou-item">
+              <h3>Selected path</h3>
+              <p id="summaryPath">VIP</p>
+            </article>
+
+            <article class="vip-card thankyou-item">
+              <h3>Selected option</h3>
+              <p id="summaryOption">Monthly</p>
+            </article>
+
+            <article class="vip-card thankyou-item">
+              <h3>Next action</h3>
+              <p id="summaryNext">Whop links are blank for now, so this preview stops here after submission.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="vip-grid vip-grid-3">
+          <article class="vip-card">
+            <div class="vip-number">01</div>
+            <h3>VIP Discord</h3>
+            <p>Live ecosystem access, chart exposure, structured community interaction, and sharper execution context.</p>
+          </article>
+
+          <article class="vip-card">
+            <div class="vip-number">02</div>
+            <h3>Bootcamp</h3>
+            <p>Framework-first learning for traders who want to build understanding properly and remove confusion.</p>
+          </article>
+
+          <article class="vip-card" id="contact">
+            <div class="vip-number">03</div>
+            <h3>Stay connected</h3>
+            <p>Capture lower-intent visitors cleanly while keeping them connected to the FortitudeFX ecosystem.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 FortitudeFX. All rights reserved.
+  </footer>
+
+  <script src="waitlist-brevo-whop-ui-preview.js"></script>
+</body>
+</html>
